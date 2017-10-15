@@ -1,0 +1,23 @@
+@import 'variables';
+@import 'mixins';
+
+.home-page {
+  .text {
+    display: block;
+  }
+}
+
+@include respond-to(tablet) {
+  .home-page {
+    .profile-image {
+      float: left;
+      margin-right: 16px;
+    }
+    .text {
+      display: inline;
+    }
+    .para {
+      overflow: hidden;
+    }
+  }
+}
