@@ -13,6 +13,8 @@
   padding: 9px 15px 12px;
   text-shadow: $crimson 0 1px;
   text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
   &:hover {
     background: $button-red;
     color: #fffbbf;

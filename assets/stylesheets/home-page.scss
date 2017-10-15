@@ -2,6 +2,36 @@
 @import 'mixins';
 
 .home-page {
+
+  .ward-finder-promo {
+    display: block;
+    text-decoration: none;
+    position: relative;
+    .secondary-header {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      display: inline-block;
+      padding: 10px;
+      background-color: $white;
+      color: $button-red;
+    }
+    .map {
+      width: 100%;
+      height: auto;
+    }
+    &:hover {
+      .secondary-header {
+        color: $crimson;
+      }
+    }
+  }
+
+  .red-button {
+    margin-top: 8px;
+  }
+
+
   .text {
     display: block;
   }
@@ -18,6 +48,17 @@
     }
     .para {
       overflow: hidden;
+    }
+  }
+}
+
+@include respond-to(desktop) {
+  .home-page {
+    .ward-finder-promo {
+      .secondary-header {
+        padding: 20px;
+        bottom: 30px;
+      }
     }
   }
 }

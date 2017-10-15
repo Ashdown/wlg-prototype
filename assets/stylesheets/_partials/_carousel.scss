@@ -2,6 +2,7 @@
 @import '../mixins';
 
 .carousel {
+  margin: 16px 0 0 8px;
   .slide {
     position: relative;
   }
@@ -14,10 +15,6 @@
     background-color: $white;
   }
 
-  .para {
-    display: none;
-  }
-
   .slide-image {
     width: 100%;
     height: auto;
@@ -27,21 +24,8 @@
 
 @include respond-to(desktop) {
   .carousel {
-    .secondary-header,
-    .para{
-      padding: 20px;
-    }
     .secondary-header {
-      bottom: 150px;
-    }
-    .para {
-      display: inline-block;
-      bottom: 30px;
-      position: absolute;
-      text-align: right;
-      right: 5px;
-      margin-left: 150px;
-      background-color: $white;
+      padding: 20px;
     }
 
   }

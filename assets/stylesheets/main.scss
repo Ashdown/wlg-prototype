@@ -67,6 +67,13 @@
       font-size: 40px;
       line-height: 48px;
     }
+    .row {
+      overflow: hidden;
+    }
+    .column {
+      width: 50%;
+      float: left;
+    }
   }
 }
 
