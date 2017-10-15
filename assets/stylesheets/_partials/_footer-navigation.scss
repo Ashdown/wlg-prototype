@@ -1,7 +1,7 @@
 @import '../variables';
 @import '../mixins';
 
-.newsletter-navigation {
+.footer-navigation {
   background: #2e2e2e;
   border-top: 2px solid #ee3224;
   border-bottom: 1px solid #333333;
@@ -30,7 +30,7 @@
 }
 
 @include respond-to(desktop) {
-  .newsletter-navigation {
+  .footer-navigation {
     .nav-list {
       max-width: 1026px;
       margin-left: auto;

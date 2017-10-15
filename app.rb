@@ -5,20 +5,20 @@ get '/' do
   erb :home
 end
 
-get '/newsletter' do
-  erb :newsletter
+get '/who-we-are' do
+  erb :who_we_are
 end
 
-get '/campaign' do
-  erb :campaign
+get '/ward-spotlight' do
+  erb :ward_spotlight
 end
 
-get '/offering-help' do
-  erb :offering_help
+get '/elections' do
+  erb :elections
 end
 
-get '/needing-help' do
-  erb :needing_help
+get '/campaigns' do
+  erb :campaigns
 end
 
 get '/links' do
